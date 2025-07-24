@@ -30,6 +30,7 @@ func main() {
 	router.RegisterRoutes(e)
 
 	// Start server
+	// Please add PORT environment variable to a .env file, it hasn't been committed for security reasons.
 	port := os.Getenv("PORT")
 	e.Logger.Fatal(e.Start(":" + port))
 }
